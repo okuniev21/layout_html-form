@@ -4,14 +4,165 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, 
+      user-scalable=no, 
+      initial-scale=1.0, 
+      maximum-scale=1.0, 
+      minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <h1>HTML Form</h1>
+
+    <fieldset class="persinfo">
+        <legend>Personal information</legend>
+        
+        <label for="sname">Surname:</label>
+        <input 
+        type="text" 
+        name="sname"
+        id="sname"
+        class="surname"
+        autocomplete="off"
+        required
+        ><br>
+        
+        <label for="fname">Name:</label>
+        <input 
+        type="text" 
+        name="fname"
+        id="fname"
+        class="firname"
+        autocomplete="off"
+        required
+        ><br>
+        
+        <label for="age">How old are You?:</label>
+        <input 
+        type="number" 
+        name="age" 
+        id="age"
+        class="age"
+        value="12" 
+        min="1" 
+        max="100" 
+        autocomplete="off"
+        required
+        
+        ><br>
+
+        <label for="birth">Full date of birth:</label>
+        <input 
+        type="date"  
+        name="birth"
+        id="birth"
+        class="birth"
+        required
+        ><br>
+        
+        <label for="accept">I accept the term of the agreement:</label>
+        <input 
+        type="checkbox" 
+        name="accept"
+        id="accept"
+        class="accept"
+        required>
+    </fieldset>
+  
+    <fieldset class="registration">
+      <legend>Registration</legend>
+      
+      <label for="email">E-mail:</label>
+      <input 
+      type="email" 
+      name="email" 
+      id="email"
+      class="email" 
+      placeholder="email@example.com" 
+      autocomplete="off"><br>
+      
+      <label for="Password">Password:</label>
+      <input 
+      type="Password" 
+      name="Password" 
+      id="Password"
+      autocomplete="off"><br>
+    </fieldset>
+
+    <fieldset class="factaboutyou">
+      <legend>At interesting fact about you!</legend>
+      
+      <label for="radio">Do you love cats?</label>
+      <input 
+      type="radio" 
+      name="yes" 
+      class="radio" 
+      id="radio">
+      Yes
+
+      <input 
+      type="radio" 
+      name="no" 
+      class="radio" 
+      id="radio">
+      No<br>
+
+      <label for="color">What is your favorite color?:</label>
+      <input 
+      type="color" 
+      name="color" 
+      class="color"
+      id="color"
+      ><br>
+
+      <label for="bed">What time do you go to bed?:</label>
+      <input 
+      type="time" 
+      name="bed" 
+      class="bed" 
+      id="bed"
+      ><br>
+
+      <label for="cars">What are your favorite brand of cars?:</label>
+      <select 
+      name="cars" 
+      class="cars" 
+      id="cars"
+      size="3" 
+      multiple
+      >
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Lada">Lada</option>
+      </select><br>
+
+      <label for="work">How do you rate our work?</label>
+      <input type="range" name="work" id="work"><br>
+    </fieldset>
+    
+    <fieldset class="additionalinfo">
+      <legend>Additional info:</legend>
+
+      <label for="comments">Comments:</label>
+      <textarea 
+      name="comments" 
+      class="comments"
+      id="comments"
+      cols="20" 
+      autocomplete="off"
+      ></textarea><br>
+
+      <label for="recommend">Would you recommend us?</label>
+      <select name="recommend" id="recommend">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+    </fieldset>
+
+  <button type="submit" class="submit">Submit</button>
+
   </body>
 </html>

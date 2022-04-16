@@ -1,1 +1,53 @@
-/* styles go here */
+
+.registration {
+    margin-top: 20px;
+}
+
+.factaboutyou {
+    margin-top: 20px;
+}
+
+.additionalinfo {
+    margin-top: 20px;
+}
+
+.surname {
+    margin-bottom: 10px;
+}
+
+.firname {
+    margin-bottom: 10px;
+}
+
+.age {
+    margin-bottom: 10px;
+}
+
+.birth {
+    margin-bottom: 10px;
+}
+
+.email {
+    margin-bottom: 10px;
+}
+
+.radio {
+    margin-bottom: 10px;
+}
+
+.color {
+    margin-bottom: 10px;
+}
+
+.bed {
+    margin-bottom: 10px; 
+}
+
+.cars {
+    margin-top: 10px;
+}
+
+.submit {
+    margin-top: 10px;
+}
+
