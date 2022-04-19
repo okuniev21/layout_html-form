@@ -20,17 +20,18 @@
 
     <fieldset class="persinfo">
         <legend>Personal information</legend>
-        
+        <div>
         <label for="sname">Surname:</label>
         <input 
         type="text" 
-        name="sname"
-        id="sname"
+        name="surname"
+        id="surname"
         class="surname"
         autocomplete="off"
         required
-        ><br>
+        ></div>
         
+        <div>
         <label for="fname">Name:</label>
         <input 
         type="text" 
@@ -39,8 +40,9 @@
         class="firname"
         autocomplete="off"
         required
-        ><br>
+        ></div>
         
+        <div>
         <label for="age">How old are You?:</label>
         <input 
         type="number" 
@@ -52,9 +54,9 @@
         max="100" 
         autocomplete="off"
         required
-        
-        ><br>
+        ></div>
 
+        <div>
         <label for="birth">Full date of birth:</label>
         <input 
         type="date"  
@@ -62,7 +64,7 @@
         id="birth"
         class="birth"
         required
-        ><br>
+        ></div>
         
         <label for="accept">I accept the term of the agreement:</label>
         <input 
@@ -76,6 +78,7 @@
     <fieldset class="registration">
       <legend>Registration</legend>
       
+      <div>
       <label for="email">E-mail:</label>
       <input 
       type="email" 
@@ -83,19 +86,20 @@
       id="email"
       class="email" 
       placeholder="email@example.com" 
-      autocomplete="off"><br>
+      autocomplete="off"></div>
       
       <label for="Password">Password:</label>
       <input 
       type="Password" 
       name="Password" 
       id="Password"
-      autocomplete="off"><br>
+      autocomplete="off">
     </fieldset>
 
     <fieldset class="factaboutyou">
       <legend>At interesting fact about you!</legend>
       
+      <div>
       <label for="radio">Do you love cats?</label>
       <input 
       type="radio" 
@@ -109,24 +113,27 @@
       name="no" 
       class="radio" 
       id="radio">
-      No<br>
+      No</div>
 
+      <div>
       <label for="color">What is your favorite color?:</label>
       <input 
       type="color" 
       name="color" 
       class="color"
       id="color"
-      ><br>
+      ></div>
 
+      <div>
       <label for="bed">What time do you go to bed?:</label>
       <input 
       type="time" 
       name="bed" 
       class="bed" 
       id="bed"
-      ><br>
+      ></div>
 
+      <div>
       <label for="cars">What are your favorite brand of cars?:</label>
       <select 
       name="cars" 
@@ -138,15 +145,17 @@
         <option value="BMW">BMW</option>
         <option value="Audi">Audi</option>
         <option value="Lada">Lada</option>
-      </select><br>
+      </select></div>
 
+      <div>
       <label for="work">How do you rate our work?</label>
-      <input type="range" name="work" id="work"><br>
+      <input type="range" name="work" id="work"></div>
     </fieldset>
     
     <fieldset class="additionalinfo">
       <legend>Additional info:</legend>
 
+      <div>
       <label for="comments">Comments:</label>
       <textarea 
       name="comments" 
@@ -154,7 +163,7 @@
       id="comments"
       cols="20" 
       autocomplete="off"
-      ></textarea><br>
+      ></textarea></div>
 
       <label for="recommend">Would you recommend us?</label>
       <select name="recommend" id="recommend">
